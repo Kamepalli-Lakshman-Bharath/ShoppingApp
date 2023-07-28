@@ -12,7 +12,7 @@ $(document).ready(function () {
       if (data[i].isAccessory === false) {
         let card = `
         <div class="card" id="${i + 1}"><a href="product.html">
-        <img src="${data[i].preview}" alt="${data[i].name}">
+        <img src="${data[i].preview}" alt="${data[i].name}"/>
         <h4 class="name">${data[i].name}</h4>
         <p class="brand">${data[i].brand}</p>
         <h4 class="price">Rs ${data[i].price}</h4>
@@ -47,7 +47,7 @@ $(document).ready(function () {
         let context = `
       <div id="product-container">
        <div class="image-of-product">
-         <img id="preview-image" src="${data.photos[0]}" class="pre-img"alt="">
+         <img id="preview-image" src="${data.photos[0]}" class="pre-img"alt=""/>
        </div>
        <div class="product-details">
          <h1 class="name"style="font-size:2.8em; font-weight:500;">${data.name}</h1>
@@ -65,7 +65,7 @@ $(document).ready(function () {
         let imgSd = $(".image-slide");
         for (let i = 0; i < data.photos.length; i++) {
           let div = `
-         <img src="${data.photos[i]}" alt="photo${i + 1}" id="photo${i + 1}" >
+         <img src="${data.photos[i]}" alt="photo${i + 1}" id="photo${i + 1}" />
          `;
           imgSd.append(div);
 
@@ -101,7 +101,7 @@ $(document).ready(function () {
         let itemcard = $(".item-container");
         let content = `
         <div class="cart-card">
-         <img class="preview-image-cart" src="${data.photos[0]}" alt="">
+         <img class="preview-image-cart" src="${data.photos[0]}" alt=""/>
          <div class="right"> 
            <b style= "font-size:1.2em;">${data.name}</b>
            <p>X${item}</p>
